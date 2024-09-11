@@ -1,0 +1,36 @@
+1. check USB port connection
+
+ls /dev/tty*
+
+2. Port permission required
+
+sudo usermod -aG dialout <linux_account>
+
+3. Run the read_write_mode node of the dynamixel_sdk_examples package
+
+ros2 run dynamixel_sdk_examples read_write_node
+
+
+
+
+
+4. in another terminal
+
+Publish dynamixel_sdk_custom_interfaces/SetPosition.msg values to the set_position topic
+
+
+ros2 topic pub -1 /set_position dynamixel_sdk_custom_interfaces/SetPosition "{id: 1, position:1000}"
+
+
+
+Service call to /get_position
+
+ros2 service call /get_position dynamixel_sdk_custom_interfaces/srv/GetPosition "id: 1"
+
+
+
+Publish dynamixel_sdk_custom_interfaces/SetPosition.msg values to the set_position topic
+
+ros2 topic pub -1 /set_position dynamixel_sdk_custom_interfaces/SetPosition "{id: 1, position:0}"
+
+ros2 topic pub -1 /set_position dynamixel_sdk_custom_interfaces/SetPosition "{id: 1, position:2000}"

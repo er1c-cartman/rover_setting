@@ -1,0 +1,8 @@
+# Constants
+# Request
+uint8 id
+int16 pwm
+---
+# Response
+bool success
+string message

@@ -1,0 +1,25 @@
+/icp_registration:
+  ros__parameters:
+    use_sim_time: false 
+    rough_leaf_size: 0.4
+    refine_leaf_size: 0.1
+    pcd_path: "/home/home/rover_ws/src/test.pcd"
+    map_frame_id: "map"
+    odom_frame_id: "odom"
+    range_odom_frame_id: "lidar_odom"
+    laser_frame_id: "livox_frame"
+    pointcloud_topic: "/filtered_points"
+    thresh: 1.0
+    xy_offset: 0.5
+    yaw_offset: 60.0
+    yaw_resolution: 5.0
+    initial_pose: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0] # x,y,z,roll,pitch,yaw
+
+    lidar_roll_correction: 0.0  # Roll correction for LiDAR in radians
+
+
+    # thresh: 1.0
+    # xy_offset: 0.5
+    # yaw_offset: 60.0
+    # yaw_resolution: 5.0
+    # initial_pose: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # x, y, z, roll, pitch, yaw

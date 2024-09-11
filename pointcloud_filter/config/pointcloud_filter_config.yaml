@@ -1,0 +1,8 @@
+pointcloud_filter_node:
+  ros__parameters:
+    input_topic: "/livox/lidar/pointcloud"
+    output_topic: "/filtered_points"
+    angle_filters: [-3.215, -2.63, 2.63, 3.215]
+    distance_threshold: 0.1  # Adjust this threshold as needed
+    max_distance: 200.0  # New parameter for maximum distance
+

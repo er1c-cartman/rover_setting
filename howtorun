@@ -1,0 +1,13 @@
+ros2 launch rover_description rover.launch.py
+
+ros2 launch livox_ros_driver2 rviz_MID360_launch.py
+
+ros2 launch fast_lio mapping.launch.py
+
+ros2 launch elevation_mapping elevation.launch.py
+
+ros2 launch rover_navigation mppi.launch.py
+
+
+sudo chmod 666 /dev/ttyUSB0
+sudo chmod 666 /dev/ttyUSB1

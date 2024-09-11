@@ -1,0 +1,11 @@
+four_wheel_kinematics:
+  ros__parameters:
+    wheel_base: 0.44  # Distance between front and rear wheels in meters
+    track_width: 0.375  # Distance between left and right wheels in meters
+    wheel_radius: 0.085  # Radius of the wheels in meters
+    profile_acceleration: 100  # Profile Acceleration for the motors
+    front_left_wheel: 2
+    front_right_wheel: 3
+    rear_left_wheel: 4
+    rear_right_wheel: 5
+
